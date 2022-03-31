@@ -261,12 +261,12 @@ def raze_fetch_remote_crates():
         build_file = Label("//cargo/remote:BUILD.unicode-xid-0.2.2.bazel"),
     )
 
-    maybe(
-        http_archive,
-        name = "raze__wise_units__0_22_0",
-        url = "http://192.168.1.11/wise_units-0.22.0.crate",
-        type = "tar.gz",
-        sha256 = "246011a57c61fdcab0908d07d4d94579c5c069e8a222033534051b3b7c2ccb11",
-        strip_prefix = "wise_units-0.22.0",
-        build_file = Label("//cargo/remote:BUILD.wise_units-0.22.0.bazel"),
-    )
+#    maybe(
+#        http_archive,
+#        name = "raze__wise_units__0_22_0",
+#        url = "http://192.168.1.11/wise_units-0.22.0.crate",
+#        type = "tar.gz",
+#        sha256 = "246011a57c61fdcab0908d07d4d94579c5c069e8a222033534051b3b7c2ccb11",
+#        strip_prefix = "wise_units-0.22.0",
+#        build_file = Label("//cargo/remote:BUILD.wise_units-0.22.0.bazel"),
+#    )

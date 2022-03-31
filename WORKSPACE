@@ -17,5 +17,7 @@ rules_rust_dependencies()
 
 rust_register_toolchains(version = "1.59.0", edition="2018")
 load("//cargo:crates.bzl", "raze_fetch_remote_crates")
+load("//cargo:local.bzl", "unarchive_local_crates")
 
 raze_fetch_remote_crates()
+unarchive_local_crates()
